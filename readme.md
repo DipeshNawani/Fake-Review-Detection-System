@@ -20,7 +20,7 @@ Upload **any** product, hotel, app, or food review CSV dataset and the system wi
 - **Display everything** in a 6-tab interactive dashboard with charts, confusion matrices, and live prediction
 
 ## Project Structure
-
+```
 fake-review-detection/
 │
 ├── app.py                  ← Main Streamlit dashboard (run this)
@@ -31,6 +31,7 @@ fake-review-detection/
 ├── visualizations.py       ← All charts and graphs
 ├── requirements.txt        ← Python dependencies
 └── README.md
+```
 
 ## Supported Datasets
 
