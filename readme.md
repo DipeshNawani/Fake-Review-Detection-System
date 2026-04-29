@@ -49,6 +49,7 @@ The system works with **any** review CSV - no column renaming needed:
 
 ### 1. Clone the repository
 git clone https://github.com/DipeshNawani/Fake-Review-Detection-System.git
+
 cd Fake-Review-Detection-System
 
 ### 2. Create a virtual environment (recommended)
