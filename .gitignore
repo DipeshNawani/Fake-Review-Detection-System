@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files — do not upload large CSVs to GitHub
+*.csv
+*.xlsx
+*.xls
+*.json
+data/
+datasets/
+
+# Trained model files — large binary files
+*.h5
+*.pkl
+*.joblib
+*.model
+saved_models/
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+logs/
+
+# Screenshots (add manually if needed)
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# Environment variables
+.env
+.env.local
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
