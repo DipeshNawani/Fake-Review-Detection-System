@@ -44,7 +44,6 @@ The system works with **any** review CSV - no column renaming needed:
 | Zomato / Food Reviews             |           Kaggle              |
 | IMDb Movie Reviews                |           Kaggle              |
 | Any CSV with a review/text column |             -                 |
-|-----------------------------------|-------------------------------|
 
 ## Installation
 
@@ -80,7 +79,6 @@ Raw Text → Lowercase → Remove URLs → Remove symbols/numbers → Remove sto
 
 ### Step 3 - Fake Label Generation (8 Rules)
 
-|----------------------|-------------------------------------------|--------------------------------------------------------------|
 | Rule                 | Condition                                 | Example                                                      |
 |----------------------|-------------------------------------------|--------------------------------------------------------------|
 | Too Short            | Review < 15 characters                    | "ok", "nice"                                                 |
@@ -91,7 +89,6 @@ Raw Text → Lowercase → Remove URLs → Remove symbols/numbers → Remove sto
 | Excessive Caps       | 3+ "!" or 60% words ALL_CAPS              | "AMAZING!!! BUY NOW!!!"                                      |
 | Exaggerated Language | "1000%", "best ever", "must buy"          | "1000% recommend must visit"                                 |
 | No Specific Details  | 15+ words but zero concrete nouns         | "Very amazing wonderful fantastic experience overall great"  |
-|----------------------|-------------------------------------------|--------------------------------------------------------------|
 
 **Any one rule triggered -> FAKE (1). All rules clear -> GENUINE (0)**
 
@@ -114,27 +111,22 @@ Text → Tokenize → Pad to length 100 → Embedding (64-dim)
 
 ### Fake Detection (Datafiniti Hotel Reviews, n=5,000)
 
-|----------------------|----------|-----------|--------|----------|
 | Model                | Accuracy | Precision | Recall | F1-Score |
 |----------------------|----------|-----------|--------|----------|
 | Logistic Regression  | 72.4%    | 73.92%    | 72.4%  | 72.93%   |
 | Naive Bayes          | 71.9%    | 69.93%    | 71.9%  | 68.25%   |
 | SVM (LinearSVC)      | 70.6%    | 71.18%    | 70.6%  | 70.85%   |
 | Bidirectional LSTM   | ~88-93%  | -         | -      | -        |
-|----------------------|----------|-----------|--------|----------|
 
 ### Sentiment Analysis
 
-|-------------------------|----------|
 | Method                  | Accuracy |
 |-------------------------|----------|
 | Lexicon-Based           | ~80%     |
 | ML Sentiment Classifier | 88.0%    |
-|-------------------------|----------|
 
 ## Dashboard - 6 Tabs
 
-|----------------------|--------------------------------------------------------------------------|
 | Tab                  | Contents                                                                 |
 |----------------------|--------------------------------------------------------------------------|
 | Dataset Overview     | KPI cards, column detection results, processed data sample, downloads    |
@@ -143,11 +135,9 @@ Text → Tokenize → Pad to length 100 → Embedding (64-dim)
 | ML Results           | Summary table, accuracy comparison, per-model confusion matrix           |
 | Deep Learning        | Architecture, training curves, confusion matrix, ML vs DL comparison     |
 | Live Prediction      | Rule-based + ML + DL prediction, confidence %, batch CSV prediction      |
-|----------------------|--------------------------------------------------------------------------|
 
 ## Tech Stack
 
-|--------------------------|------------------------------------------|
 | Technology               | Purpose                                  |
 |--------------------------|------------------------------------------|
 | Python 3.10+             | Core language                            |
@@ -156,7 +146,6 @@ Text → Tokenize → Pad to length 100 → Embedding (64-dim)
 | TensorFlow / Keras 2.10+ | Bidirectional LSTM                       |
 | Pandas / NumPy           | Data manipulation                        |
 | Matplotlib / Seaborn     | Visualizations                           |
-|--------------------------|------------------------------------------|
 
 ## Dataset
 **This project does not require any specific dataset.** *It works with any CSV file that contains a review or text column.*
