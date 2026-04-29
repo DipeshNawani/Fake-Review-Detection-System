@@ -36,7 +36,6 @@ fake-review-detection/
 
 The system works with **any** review CSV - no column renaming needed:
 
-|-----------------------------------|-------------------------------|
 | Dataset                           | Source                        |
 |-----------------------------------|-------------------------------|
 | Flipkart Product Reviews          |           Kaggle              |
