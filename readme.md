@@ -166,4 +166,5 @@ Datafiniti Hotel Reviews - available on Kaggle: (https://www.kaggle.com/datasets
 
 ## Author
 **Dipesh Nawani**
-dipeshnawani160@gmail.com
+
+dipeshnawani1610@gmail.com
